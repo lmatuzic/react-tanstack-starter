@@ -1,9 +1,9 @@
-import tailwindcss from '@tailwindcss/vite'
-import viteReact from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite';
+import viteReact from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
 
-import { tanstackRouter } from '@tanstack/router-plugin/vite'
-import path from 'path'
+import { tanstackRouter } from '@tanstack/router-plugin/vite';
+import path from 'path';
 
 export default defineConfig({
   plugins: [
@@ -16,4 +16,4 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
-})
+});

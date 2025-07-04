@@ -6,6 +6,8 @@ const config = {
   singleQuote: true,
   trailingComma: 'all',
   endOfLine: 'lf',
+  plugins: ['prettier-plugin-tailwindcss'],
+  tailwindStylesheet: 'src/styles.css',
 };
 
 export default config;

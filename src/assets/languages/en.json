@@ -1,0 +1,84 @@
+{
+  "translation": {
+    "navigation": {
+      "home": "Home",
+      "tenantSwitcher": {
+        "title": "Tenants"
+      }
+    },
+    "components": {
+      "table": {
+        "noResults": "No results.",
+        "options": {
+          "view": {
+            "button": "View",
+            "title": "Toggle columns"
+          }
+        },
+        "header": {
+          "asc": "Asc",
+          "desc": "Desc",
+          "hide": "Hide"
+        },
+        "pagination": {
+          "selectedRows": "{{selected}} of {{total}} row(s) selected.",
+          "rowsPerPage": "Rows per page",
+          "pageState": "Page {{current}} of {{total}}"
+        }
+      }
+    },
+    "auth": {
+      "username": "Username",
+      "password": "Password",
+      "login": "Log in",
+      "logout": "Log out",
+      "loginDescription": "Login with your Xolvi account",
+      "welcomeBack": "Welcome back",
+      "loggingIn": "Logging in...",
+      "loggingOut": "Logging out...",
+      "errors": {
+        "incorrectPassword": "Incorrect password",
+        "usernameNotRecognized": "Username not recognized"
+      }
+    },
+    "common": {
+      "genericErrorsMsg": "Something went wrong: {{error}}",
+      "tryAgain": "Try again",
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "selected": "Selected",
+      "yes": "Yes",
+      "no": "No",
+      "restart": "Restart",
+      "viewAll": "View all",
+      "view": "View",
+      "learnMore": "Learn more",
+      "all": "All",
+      "loading": "Loading...",
+      "lightMode": "Light mode",
+      "darkMode": "Dark mode",
+      "description": "Description",
+      "submit": "Submit",
+      "submitting": "Submitting...",
+      "image": "Image",
+      "overview": "Overview",
+      "performance": "Performance",
+      "maintenance": "Maintenance",
+      "controls": "Controls",
+      "type": "Type",
+      "title": "Title",
+      "created": "Created",
+      "updated": "Updated",
+      "totalUsage": "Total usage",
+      "confirm": "Confirm",
+      "notSelected": "Not selected",
+      "requiredField": "This field is required",
+      "coordinates": "Coordinates",
+      "select": "Select",
+      "apply": "Apply"
+    }
+  }
+}

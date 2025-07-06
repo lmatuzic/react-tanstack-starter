@@ -18,11 +18,11 @@ export const Route = createRootRouteWithContext<{
         <Outlet />
       </AppLayout>
 
-      <TanStackRouterDevtools position="bottom-left" />
+      <TanStackRouterDevtools position="bottom-right" />
     </>
   ),
   errorComponent: () => (
-    <div className="p-4">
+    <div className="p-2 sm:p-4">
       <h1>Error page</h1>
     </div>
   ),

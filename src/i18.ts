@@ -2,21 +2,19 @@ import { initReactI18next } from 'react-i18next';
 
 import i18n from 'i18next';
 
-import en from '@/assets/languages/en.json';
+import english from '@/assets/languages/english.json';
 
 export const defaultNS = 'translation';
 
 export const resources = {
-  en: {
-    translation: en,
-  },
+  english,
 };
 
 export const setupI18n = (language: string) => {
   i18n.use(initReactI18next).init({
     resources,
     defaultNS,
-    fallbackLng: 'en',
+    fallbackLng: 'english',
     lng: language,
     debug: process.env.NODE_ENV === 'development',
     saveMissing: true,

@@ -6,7 +6,7 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
   return (
-    <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] min-h-screen">
+    <div className="grid min-h-screen grid-cols-[auto_1fr] grid-rows-[auto_1fr]">
       <header className="col-span-2">
         <h1>HEADER</h1>
       </header>
@@ -15,7 +15,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         <h2>ASIDE</h2>
       </aside>
 
-      <main className="col-start-2 row-start-2 p-4 md:p-8 bg-background text-foreground">
+      <main className="col-start-2 row-start-2 bg-background p-2 text-foreground sm:p-4 md:p-8">
         {children}
       </main>
     </div>

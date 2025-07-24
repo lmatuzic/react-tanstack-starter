@@ -26,7 +26,11 @@ import {
 } from '@/components/ui/collapsible';
 import { NavUser } from '@/components/NavUser';
 
-export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
+interface AppSidebarProps extends ComponentProps<typeof Sidebar> {
+  containerMode?: 'container' | 'full';
+}
+
+export function AppSidebar({ containerMode, ...props }: AppSidebarProps) {
   const location = useLocation();
   const { state } = useSidebar();
 
@@ -41,7 +45,7 @@ export function AppSidebar({ ...props }: ComponentProps<typeof Sidebar>) {
   };
 
   return (
-    <Sidebar collapsible="icon" {...props}>
+    <Sidebar collapsible="icon" {...props} containerMode={containerMode}>
       {isSidebarCollapsed ? null : (
         <SidebarHeader className="flex flex-row items-center justify-between">
           <a href="/" className="ml-2">

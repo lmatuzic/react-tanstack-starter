@@ -4,6 +4,9 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import { initialAuthState } from '../constants';
 import type { AuthState } from '../types';
 
+const USERNAME = 'user';
+const PASSWORD = 'password';
+
 export const useAuthStore = create<AuthState>()(
   persist(
     (set) => ({
@@ -12,7 +15,7 @@ export const useAuthStore = create<AuthState>()(
       login: (username: string, password: string) => {
         set({ isLoading: true, error: null });
 
-        if (username === 'user' && password === 'password') {
+        if (username === USERNAME && password === PASSWORD) {
           set({
             isAuthenticated: true,
             username,

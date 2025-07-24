@@ -11,7 +11,7 @@ export default function Providers() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
         <RouterProvider />
-        <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr] min-h-screen"></div>
+        <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr]"></div>
       </ThemeProvider>
     </QueryClientProvider>
   );

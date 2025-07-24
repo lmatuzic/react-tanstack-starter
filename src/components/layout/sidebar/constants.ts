@@ -25,6 +25,18 @@ export const sidebarItems = [
         title: 'Subpage 2',
         url: '/subpage-2',
         icon: Building,
+        items: [
+          {
+            title: 'Sub-subpage 1',
+            url: '/subpage-2/sub-subpage-1',
+            icon: MapIcon,
+          },
+          {
+            title: 'Sub-subpage 2',
+            url: '/subpage-2/sub-subpage-2',
+            icon: Building,
+          },
+        ],
       },
     ],
   },

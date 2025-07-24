@@ -1,4 +1,5 @@
 import { ThemeToggle } from './ThemeToggle';
+import { ContainerToggle } from './ContainerToggle';
 import { SidebarTrigger } from './ui/sidebar';
 import { NavBreadcrumbs } from './NavBreadcrumbs';
 import { Separator } from './ui/separator';
@@ -17,7 +18,10 @@ export default function TopNavigation() {
         <NavBreadcrumbs />
       </div>
 
-      <ThemeToggle />
+      <div className="flex flex-row items-center gap-1">
+        <ContainerToggle />
+        <ThemeToggle />
+      </div>
     </nav>
   );
 }

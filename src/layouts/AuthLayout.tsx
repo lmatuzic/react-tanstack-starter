@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { useAuthStore } from '@/features/auth/hooks/useAuthStore';
 import { LoadingOverlay } from '@/components/common/LoadingOverlay';
+import { cn } from '@/lib/utils';
 
 export function AuthLayout() {
   const navigate = useNavigate();
@@ -17,8 +18,16 @@ export function AuthLayout() {
     }
   }, [isAuthenticated, navigate]);
 
+  const { containerMode } = require('@/hooks/useTheme').useTheme();
+
   return (
-    <main className="bg-muted h-screen">
+    <main
+      className={cn(
+        `h-screen bg-muted ${
+          containerMode === 'container' ? 'container' : 'w-full'
+        }`,
+      )}
+    >
       <LoadingOverlay isLoading={isLoading} text={t('auth.loggingIn')} />
       <Outlet />
     </main>

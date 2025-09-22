@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuthStore } from '@/features/auth/hooks/useAuthStore';
 import { LoadingOverlay } from '@/components/common/LoadingOverlay';
 import { cn } from '@/lib/utils';
+import { useTheme } from '@/hooks/useTheme';
 
 export function AuthLayout() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export function AuthLayout() {
     }
   }, [isAuthenticated, navigate]);
 
-  const { containerMode } = require('@/hooks/useTheme').useTheme();
+  const { containerMode } = useTheme();
 
   return (
     <main

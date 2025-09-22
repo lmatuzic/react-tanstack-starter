@@ -19,6 +19,7 @@ export function ContainerToggle() {
           : 'Switch to container width'
       }
       onClick={handleToggle}
+      className="hidden md:inline-flex"
       title={
         containerMode === 'container'
           ? 'Switch to full width'

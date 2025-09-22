@@ -9,14 +9,15 @@ interface AppLayoutProps {
   children: ReactNode;
 }
 
-export default function AppLayout({ children }: AppLayoutProps) {
+export default function AppLayout(props: AppLayoutProps) {
+  const { children } = props;
   const { containerMode } = useTheme();
 
   return (
     <SidebarProvider>
       <div
         className={cn(
-          `${containerMode === 'container' ? 'container mx-auto' : 'w-full'} flex gap-x-4 overflow-hidden bg-background p-2 text-foreground sm:p-4`,
+          `${containerMode === 'container' ? 'container md:mx-auto' : 'w-full'} flex gap-x-4 overflow-hidden bg-background p-2 text-foreground sm:p-4`,
         )}
       >
         <AppSidebar
@@ -25,6 +26,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
             containerMode === 'container' ? 'fixed top-0 h-screen' : ''
           }
         />
+
         <div className="flex h-screen flex-1 flex-col overflow-y-auto">
           <TopNavigation />
           {children}

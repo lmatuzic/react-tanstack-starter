@@ -6,7 +6,8 @@ interface DashboardLayoutProps {
   children: ReactNode;
 }
 
-export default function DashboardLayout({ children }: DashboardLayoutProps) {
+export default function DashboardLayout(props: DashboardLayoutProps) {
+  const { children } = props;
   const { containerMode } = useTheme();
 
   return (
